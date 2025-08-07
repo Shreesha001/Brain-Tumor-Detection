@@ -21,7 +21,7 @@ This project implements a brain tumor classification system using a convolutiona
 ![Web Interface – Prediction Result](images/img2.png)
 
 ### 3. Sample MRI Image Used for Model Evaluation  
-![Sample MRI Image](sample_MRI_image/img4.png)
+![Sample MRI Image](images/img3.jpg)
 
 ## Installation Instructions
 
