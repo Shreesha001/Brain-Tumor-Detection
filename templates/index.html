@@ -12,8 +12,8 @@
         }
 
         .container {
-            max-width: 600px;
-            margin: 0 auto;
+            max-width: 600px; /* Set a max width for the container */
+            margin: 0 auto;   /* Center the container horizontally */
         }
 
         .card {
@@ -25,12 +25,16 @@
             margin-top: 15px;
         }
 
+        .text-center {
+            text-align: center;
+        }
+
         .btn {
             width: 100%;
         }
 
         .lead {
-            margin-bottom: 30px;
+            margin-bottom: 30px; /* Space between the heading and the form */
         }
     </style>
 </head>
@@ -57,17 +61,14 @@
         <!-- Display Results -->
         <div id="results" class="mt-4">
             <div class="card shadow">
-                <div class="card-body text-center">
+                <div class="card-body">
                     <h4 class="card-title text-success">{{ result }}</h4>
                     <p class="card-text text-muted">Confidence: {{ confidence }}%</p>
-                    <img src="{{ file_path }}" class="img-fluid rounded" alt="Uploaded MRI Image">
+                    <img src="{{ file_path }}" class="img-fluid rounded" alt="Uploaded Image">
                 </div>
             </div>
         </div>
         {% endif %}
     </div>
-
-    <!-- Optional: Bootstrap JS for future interactivity -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
